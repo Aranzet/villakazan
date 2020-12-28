@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Villa Kazan - Производство, монтаж домокомплектов и продукции из полистиролбетона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-adaptive.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/ -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d34998bf-4eeb-43be-9ec7-113edc5f6722" type="text/javascript"></script>
+    <script src="js/placemark.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <!-- Верхняя полоса с описанием, адресом, почтой и соцю сетями -->
+        <div class="header-desc-address-mail-social">
+            <div class="header-container">
+                <!-- Описание сайта -->
+                <div class="header-desc">
+                    <p>Производство, монтаж домокомплектов и продукции из полистиролбетона</p>
+                </div>
+                <div class="address-mail-social">
+                    <!-- Адрес -->
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>г. Казань, ул. Пример, д. 1</p>
+                    </div>
+                    <!-- Почта -->
+                    <div class="mail">
+                        <i class="fas fa-envelope"></i>
+                        <p>kazan-bort@mail.ru</p>
+                    </div>
+                    <!-- Соц. сети -->
+                    <div class="social">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="VILLA KAZAN">
+            </div>
+            <div class="menu-toggle">
+                <div class="logo-menu-toggle">
+                    <img src="img/logo.png" alt="VILLA KAZAN">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active-manu">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты домов</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Новости и статьи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="callback-btn-phone-number">
+                    <div class="callback-btn">
+                        <a href="#">Заказать звонок</a>
+                    </div>
+                    <div class="phone-number">
+                        <i class="fas fa-phone"></i>
+                        <p>(843) 599-99-99</p>
+                    </div>
+                </div>
+            </div>
+            <button id="hamburger_id" class="hamburger hamburger-slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="callback-btn-phone-number-menu-toggle">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <p>(843) 599-99-99</p>
+                </div>
+                <div class="callback-btn">
+                    <a href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <!-- Путь страницы и название текущей стриницы -->
+        <div class="page-path-page-title">
+            <div class="container">
+                <div class="page-path">
+                    <a href="index.html">Главная</a>
+                    <a href="index.html">Каталог проектов</a>
+                    <p>Проект номер шесть</p>
+                </div>
+                <div class="page-title">
+                    <h1>Проект номер шесть</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Слайдер проекта и данные -->
+    <section class="project-slider-data">
+        <div class="container">
+            <div class="project-slider">
+                <!-- Большое фото -->
+                <div class="slider-for">
+                    <img src="img/project-img.jpg" alt="Фото продукта">
+                    <img src="img/project-img.jpg" alt="Фото продукта">
+                    <img src="img/project-img.jpg" alt="Фото продукта">
+                </div>
+                <!-- Превью -->
+                <div class="slider-nav">
+                    <img src="img/project-prev.jpg" alt="Слайд">
+                    <img src="img/project-prev.jpg" alt="Слайд">
+                    <img src="img/project-prev.jpg" alt="Слайд">
+                    <img src="img/project-prev.jpg" alt="Слайд">
+                    <img src="img/project-prev.jpg" alt="Слайд">
+                </div>
+            </div>
+            <!-- Данные проекта -->
+            <div class="project-data-price-btn-consultation">
+                <div class="project-name">
+                    <h2>Название проекта</h2>
+                </div>
+                <div class="project-data">
+                    <div class="project-floor">
+                        <img src="img/project-floor.png" alt="Этажей">
+                        <p>Количество этажей: <span>1</span></p>
+                    </div>
+                    <div class="project-floor-area">
+                        <img src="img/project-floor-area.png" alt="Площадь этажей">
+                        <p>Площадь этажей: <span>89 м²</span></p>
+                    </div>
+                    <div class="project-area">
+                        <img src="img/project-area.png" alt="Площадь дома">
+                        <p>Площадь дома: <span>172 м²</span></p>
+                    </div>
+                    <div class="project-material">
+                        <img src="img/project-material.png" alt="Этажей">
+                        <p>Материал стен: <span>Полистиролбетон</span></p>
+                    </div>
+                    <div class="project-time">
+                        <img src="img/project-time.png" alt="Срок монтажа">
+                        <p>Срок монтажа: <span>2 месяца</span></p>
+                    </div>
+                    <div class="project-bedroom">
+                        <img src="img/project-bedroom.png" alt="Кол-во спален">
+                        <p>Кол-во спален: <span>3</span></p>
+                    </div>
+                </div>
+                <!-- Особенности проекта -->
+                <div class="project-singularity">
+                    <h4>Особенности проекта</h4>
+                    <ul>
+                        <li>Балкон</li>
+                        <li>Гараж</li>
+                        <li>Терасса</li>
+                    </ul>
+                </div>
+                <!-- Стоимотсь проекта -->
+                <div class="project-price">
+                    <p>5 000 400 <span>руб</span></p>
+                </div>
+                <!-- Кнопка консультации -->
+                <div class="btn-consultation">
+                    <a href="#">
+                        <button>Проконсультироваться</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Планировка площади -->
+    <section class="project-plan">
+        <div class="container">
+            <h3>Планировка площади</h3>
+            <div class="floor-plan-list">
+                <div class="floor-plan-item">
+                    <p>Первый этаж</p>
+                    <div class="floor-img">
+                        <img src="img/1floor.png" alt="Первый этаж">
+                    </div>
+                </div>
+                <div class="floor-plan-item">
+                    <p>Второй этаж</p>
+                    <div class="floor-img">
+                        <img src="img/2floor.png" alt="Второй этаж">
+                    </div>
+                </div>
+                <div class="floor-plan-item">
+                    <p>Третий этаж</p>
+                    <div class="floor-img">
+                        <img src="img/3floor.png" alt="Третий этаж">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Описание проекта -->
+    <section class="project-desc">
+        <div class="container">
+            <h3>Описание проекта</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+    </section>
+    <!-- Преимущества проекта -->
+    <section class="project-advantages">
+        <div class="container">
+            <h3>Преимущества проекта</h3>
+            <div class="project-advantages-list">
+                <div class="project-advantages-item">
+                    <img src="img/have-label.png" alt="Есть">
+                    <p>Доставка материалов и все транспортные расходы</p>
+                </div>
+                <div class="project-advantages-item">
+                    <img src="img/have-label.png" alt="Есть">
+                    <p>Строительно-монтажные работы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Задать вопрос по строительству или узнать цену -->
+    <section class="ask-a-question">
+        <div class="container">
+            <div class="section-title">
+                <h3>Задать вопрос по строительству или узнать цену</h3>
+            </div>
+            <form action="#">
+                <div class="input-field">
+                    <div class="placeholder">
+                        <label>
+                            <input type="text" name="name" id="name" placeholder="&nbsp;">
+                            <span class="label">Ваше имя</span>
+                        </label>
+                    </div>
+                    <div class="placeholder">
+                        <label>
+                            <input type="email" name="email" id="email" placeholder="&nbsp;">
+                            <span class="label">Ваш e-mail</span>
+                        </label>
+                    </div>
+                    <div class="placeholder">
+                        <label>
+                            <input type="tel" name="phone" id="phone" placeholder="&nbsp;">
+                            <span class="label">Ваш номер телефона</span>
+                        </label>
+                    </div>
+                    <div class="placeholder">
+                        <label>
+                            <textarea name="message" id="message" cols="20" rows="10" placeholder="&nbsp;"></textarea>
+                            <span class="label">Сообщение</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="checkbox-btn-submit">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement">Согласие на обработку персональных данных</label>
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Контактная информация -->
+    <section class="contacts">
+        <div class="container">
+            <div class="section-title">
+                <h3>Контактная <br>
+                    информация</h3>
+            </div>
+            <div class="contacts-phone-number">
+                <p>Наши телефоны</p>
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <p>(843) 599-99-99</p>
+                </div>
+            </div>
+            <div class="contacts-mail">
+                <p>E-mail</p>
+                <div class="mail">
+                    <i class="fas fa-envelope"></i>
+                    <p>kazan-bort@mail.ru</p>
+                </div>
+            </div>
+            <div class="contacts-address">
+                <p>Адрес</p>
+                <div class="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>г. Казань, ул. Пример, д. 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Карта -->
+    <section>
+        <div id="map"></div>
+    </section>
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="logo-nav-callback-btn">
+                <div class="logo">
+                    <img src="img/logo.png" alt="VILLA KAZAN">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a>Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты домов</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Новости и статьи</a></li>
+                    </ul>
+                </nav>
+                <div class="callback-btn">
+                    <a href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="copyright-privacy-policy-developers">
+                <div class="copyright">
+                    <p>© VILLA KAZAN 2019. Все права защищены.</p>
+                </div>
+                <div class="privacy-policy">
+                    <a href="#">Политика персональных данных</a>
+                </div>
+                <div class="developers">
+                    <p>Разработано в</p>
+                    <a href="https://effect-16.ru" target="_blank">
+                        <img src="img/developers-logo.png" alt="Web-центр EFFECT">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/project-slider.js"></script>
+    <script>
+        $(function(){
+            $('#hamburger_id').click(function() {
+            $(this).toggleClass('is-active');
+            $('.menu-toggle').toggleClass('show');
+            });
+        });
+    </script>
+</body>
+</html>

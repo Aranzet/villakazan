@@ -1,0 +1,513 @@
+/* Заголовок страницы, преимущества и кнопка "К выбору проекта" */
+.advantages {
+    background: url(../img/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+.advantages h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 84px;
+}
+
+.advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.advantages-item {
+    padding-right: 80px;
+}
+
+.advantages-item h4 {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.advantages-item p {
+    font-weight: 500;
+    color: #fff;
+    line-height: 24px;
+}
+
+.advantages-item:nth-child(1) {
+    width: 300px;
+}
+
+.advantages-item:nth-child(2n) {
+    width: 260px;
+}
+
+.advantages-item:nth-child(3) {
+    width: 210px;
+}
+
+.to-project-selection-btn a,
+.all-project-btn a {
+    padding: 15px 45px;
+    background-color: #6fb62f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 10px 40px 0.1px #6fb62f;
+            box-shadow: 0px 10px 40px 0.1px #6fb62f;
+}
+
+.to-project-selection-btn a:hover,
+.all-project-btn a:hover {
+    background-color: #7bd02e;
+}
+
+/* Заголовок секции и кнопка ко всем проектам */
+.section-title-all-project {
+    margin: auto 0;
+    width: 360px;
+    padding-bottom: 55px;
+}
+
+.section-title {
+    width: 100%;
+    padding-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.all-project a {
+    padding: 15px 55px;
+    -webkit-box-shadow: 0px 5px 40px 0.1px #6fb62f;
+            box-shadow: 0px 5px 40px 0.1px #6fb62f;
+}
+
+/* Заголовок секции и описание */
+.why-we {
+    padding-bottom: 90px;
+}
+
+.why-we .section-title {
+    padding-bottom: 30px;
+}
+.section-desc p {
+    padding-bottom: 25px;
+    line-height: 24px;
+}
+
+.section-desc p:last-child {
+    padding-bottom: 0;
+}
+
+/* Слайдер */
+.why-we .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.slider {
+    width: 520px;
+    height: 400px;
+}
+
+.why-we .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slider .slick-prev,
+.slider .slick-next {
+    display: none !important;
+}
+
+/* Внешний вид точек слайдера */
+
+.slider .slick-dots {
+    bottom: 40px;
+}
+
+.slider .slick-dots li,
+.slider .slick-dots li button,
+.slider .slick-dots li button:before,
+.slider .slick-dots .slick-active button:before {
+    width: 55px;
+    height: 4px;
+    padding: 0;
+    opacity: 1;
+}
+
+.slider .slick-dots li button:before {
+    background-color: #e1e1e1;
+    content: "";
+}
+
+.slider .slick-dots .slick-active button:before {
+    background-color: #6fb62f;
+    content: "";
+}
+
+/* Преимущества работы с нами */
+.why-we-advantages {
+    width: 475px;
+}
+.why-we-advantages-title h3 {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.why-we-advantages-title hr {
+    width: 130px;
+    height: 2px;
+    border: none;
+    background-color: #6fb62f;
+}
+
+.why-we-advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.why-we-advantages-item {
+    padding-top: 30px;
+}
+
+.why-we-advantages-item:nth-child(2n+1) {
+    width: 210px;
+}
+
+.why-we-advantages-item:nth-child(2n) {
+    width: 235px;
+}
+
+.why-we-advantages-item h4 {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.why-we-advantages-item p {
+    font-size: 12px;
+}
+
+/* Выполненные проекты */
+.completed-project .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.section-title-all-project-link {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 35px;
+}
+
+.section-title-all-project-link .section-title {
+    width: auto;
+    padding-bottom: 0;
+}
+
+/* Ссылка на все проекты */
+.all-project-link a {
+    color: #6fb62f;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.all-project-link a .fas {
+    padding-left: 6px;
+}
+
+.slider-project .slick-list,
+.slider-project .slick-track {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.slider-project .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.slider-project .slick-track:before,
+.slider-project .slick-track::after {
+    display: none;
+}
+
+.slider-nav .slider-item {
+    width: 335px !important;
+    height: 200px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.slider-nav .slider-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.slider-for .slider-item .gradient {
+    height: 60%;
+}
+
+.slider-for {
+    width: 692px;
+}
+
+.slider-nav {
+    width: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.slider-nav .slick-current {
+    width: 325px !important;
+    height: 190px;
+    opacity: 1;
+    border: 5px solid #6fb62f;
+}
+
+.slider-nav .slick-current img {
+    height: 190px;
+}
+
+/* Адаптивность */
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .advantages-item p br {
+        display: none;
+    }
+    .section-desc p br {
+        display: none;
+    }
+    .why-we .container {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .why-we .section-title-section-desc {
+        width: 40%;
+    }
+    .why-we .why-we-advantages {
+        width: 100%;
+        padding-top: 40px;
+    }
+    .why-we-advantages-list .why-we-advantages-item {
+        width: 23% !important;
+    }
+    .why-we-advantages-item p br {
+        display: none;
+    }
+    .completed-project .slider-nav {
+        width: 450px;
+    }
+    .completed-project .slider-nav .slick-track {
+        width: inherit;
+    }
+    .completed-project .slider-nav .slider-item {
+        width: 220px !important;
+        height: 100%;
+    }
+    .completed-project .slider-nav .slick-current {
+        width: 210px !important;
+    }
+    .completed-project .slider-nav .slider-item img {
+        height: auto;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .advantages-item {
+        padding-right: 40px;
+    }
+    .advantages-item:last-child {
+        padding-right: 0;
+    }
+    .advantages-item:nth-child(1),
+    .advantages-item:nth-child(2n),
+    .advantages-item:nth-child(3) {
+        width: 25%;
+    }
+    .slider-for {
+        width: 100%;
+    }
+    .full-img {
+        width: 100%;
+    }
+    .completed-project .slider-nav {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .completed-project .slider-nav .slick-track {
+        width: 100% !important;
+        -webkit-transform: translate3d(0px, 0px, 0px) !important;
+                transform: translate3d(0px, 0px, 0px) !important;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .our-project .section-title h2 br {
+        display: none;
+    }
+    .why-we .container {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .why-we .section-title-section-desc {
+        width: 100%;
+    }
+    .why-we .slick-dotted.slick-slider {
+        margin-top: 40px;
+    }
+    .slider-nav .slider-item {
+        margin-bottom: 25px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    header .advantages {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+    header .advantages h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .advantages-list {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-bottom: 35px;
+    }
+    header .advantages-item:nth-child(1),
+    header .advantages-item:nth-child(2n),
+    header .advantages-item:nth-child(3) {
+        width: 47%;
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+    .our-project {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .why-we {
+        padding-bottom: 60px;
+    }
+    .why-we-advantages-list .why-we-advantages-item {
+        width: 47% !important;
+    }
+    .section-title-all-project-link {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .all-project-link {
+        padding-top: 20px;
+    }
+    .completed-project .slider-nav .slider-item {
+        width: 48% !important;
+    }
+    .completed-project .slider-nav .slick-current {
+        width: calc(48% - 10px) !important;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    header .advantages h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    header .advantages-item:nth-child(1), header .advantages-item:nth-child(2n), header .advantages-item:nth-child(3) {
+        width: 100%;
+    }
+    .advantages-item img {
+        display: none;
+    }
+    .advantages-item h4 {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .to-project-selection-btn a, .all-project-btn a {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    .slider {
+        width: 100%;
+    }
+}
+
+/* 320px - 401px */
+@media screen and (max-width: 400px) {
+    .why-we-advantages-list .why-we-advantages-item {
+        width: 100% !important;
+    }
+    .section-title h2 {
+        font-size: 36px;
+    }
+    .project-name h3 {
+        font-size: 20px;
+    }
+}
+
+/* 320px - 396px */
+@media screen and (max-width: 396px) {
+    .completed-project .project-name {
+        bottom: 100px;
+    }
+}

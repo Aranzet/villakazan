@@ -1,0 +1,242 @@
+.page-path-page-title {
+    background: url(../img/mediamaterials-bg.jpg);
+}
+
+.mediamaterials {
+    padding-top: 65px;
+}
+
+.mediamaterials .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mediamaterials h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mediamaterials hr {
+    width: 100px;
+    height: 3px;
+    margin-top: 20px;
+    border: none;
+    background-color: #6fb62f;
+}
+
+/* Фотоматериалы */
+
+.photomaterials {
+    width: 780px;
+}
+
+.photomaterials-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.photomaterials-item {
+    position: relative;
+    width: 380px;
+    height: 260px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.photomaterials-img {
+    position: relative;
+    height: 100%;
+}
+
+.photomaterials-item:hover::before {
+    content: "";
+    position: absolute;
+    background-color: #6fb62f;
+    opacity: 0.8;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    bottom: 0;
+}
+
+.photomaterials-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.photomaterials-img img:last-child {
+    bottom: 0;
+    height: 70%;
+}
+
+.photomaterials-date-name,
+.videomaterials-date-name {
+    position: absolute;
+    left: 40px;
+    bottom: 35px;
+    color: #fff;
+    z-index: 2;
+}
+
+.photomaterials-date p,
+.videomaterials-date p {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.photomaterials-name h3,
+.videomaterials-name h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Видеоматериалы */
+
+.videomaterials {
+    width: 546px;
+}
+
+.videomaterials-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.videomaterials-item {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-top: 20px;
+}
+
+.videomaterials-item video {
+    width: 100%;
+    height: 100%;
+}
+
+.videomaterials-item > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+/* Кнопка воспроизведения видео */
+
+.video-overlay-play-button {
+    display: block;
+    position: absolute;
+    left: calc(50% - 32px);
+    top: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    bottom: 0;
+    cursor: pointer;
+    background-image: url(../img/play-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+.video-overlay-play-button:hover {
+    background-image: url(../img/play-btn-hover.png);
+}
+
+.video-overlay-play-button.is-hidden,
+.videomaterials-date-name.is-hidden {
+    display: none;
+}
+
+.ask-a-question {
+    margin-top: 70px;
+}
+
+/* Адаптивность */
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .photomaterials {
+        width: 680px;
+    }
+    .videomaterials {
+        width: 440px;
+    }
+    .photomaterials-item {
+        width: 49%;
+        height: 230px;
+    }
+    .videomaterials-item {
+        height: 230px;
+    }
+    .videomaterials-item video {
+        object-fit: cover;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .mediamaterials .container {
+        flex-wrap: wrap;
+    }
+    .photomaterials {
+        width: 100%;
+    }
+    .videomaterials {
+        width: 100%;
+        padding-top: 50px;
+    }
+    .videomaterials-list {
+        justify-content: space-between;
+    }
+    .videomaterials-item {
+        width: 49%;
+        height: auto;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .photomaterials-item {
+        height: 200px;
+        margin-top: 15px;
+    }
+    .videomaterials-item {
+        width: 100%;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .photomaterials-item {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* 320px - 500px */
+@media screen and (max-width: 500px) {
+    .photomaterials-item {
+        height: 250px;
+    }
+    .photomaterials-name h3,
+    .videomaterials-name h3 {
+        font-size: 20px;
+    }
+}
+
+/* 320px - 400px */
+@media screen and (max-width: 400px) {
+    .photomaterials-item {
+        height: 200px;
+    }
+    .photomaterials-date-name,
+    .videomaterials-date-name {
+        left: 20px;
+        bottom: 20px;
+    }
+    .photomaterials-name h3,
+    .videomaterials-name h3 {
+        font-size: 16px;
+    }
+}

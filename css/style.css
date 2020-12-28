@@ -1,0 +1,883 @@
+/* Основные стили страниц (повторяющиеся на всех) */
+
+body {
+    background-color: #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1410px;
+    margin: 0 auto;
+}
+
+.header-container {
+    width: 1736px;
+    margin: 0 auto;
+}
+
+/* Верхняя полоса с описанием, адресом, почтой и соцю сетями */
+
+.header-desc-address-mail-social {
+    padding: 5px 0;
+    border-bottom: 1px solid #dadada;
+}
+
+.header-container,
+.address-mail-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.header-desc p,
+.address-mail-social p {
+    font-weight: 500;
+}
+
+.address-mail-social .address,
+.address-mail-social .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
+.address-mail-social .fas,
+.address-mail-social .social .fab {
+    padding-right: 10px;
+    font-size: 16px;
+    color: #6fb62f;
+}
+
+.address-mail-social .address {
+    padding-right: 55px;
+}
+
+.address-mail-social .mail {
+    padding-right: 60px;
+}
+
+.address-mail-social .social a {
+    margin-right: 20px;
+}
+
+.address-mail-social .social a:last-child {
+    margin-right: 0;
+}
+
+.address-mail-social .social .fab {
+    padding-right: 0;
+}
+
+/* Логотип, меню, кнопка "Заказать звонок" и номер телефона (также для подвала) */
+.header-container .logo {
+    padding: 20px 0px;
+    display: none;
+}
+
+.header-container .menu-toggle {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-container nav,
+.logo-nav-callback-btn nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.header-container nav ul,
+.logo-nav-callback-btn nav ul {
+    display: inherit;
+}
+
+.header-container nav ul li,
+.logo-nav-callback-btn nav ul li {
+    list-style: none;
+    padding-right: 25px;
+}
+
+.header-container nav ul li:last-child,
+.logo-nav-callback-btn nav ul li:last-child {
+    padding-right: 0;
+}
+
+.header-container nav ul li .active-menu {
+    color: #6fb62f;
+}
+
+.logo-nav-callback-btn nav ul li .active-menu:hover {
+    color: #000;
+}
+
+.header-container nav ul li a,
+.logo-nav-callback-btn nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.header-container nav ul li a:hover,
+.logo-nav-callback-btn nav ul li a:hover {
+    color: #6fb62f;
+}
+
+.callback-btn-phone-number {
+    display: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.callback-btn-phone-number-menu-toggle {
+    display: none;
+}
+
+.callback-btn a {
+    padding: 15px 35px;
+    background-color: #6fb62f;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.callback-btn a:hover {
+    padding: 13px 33px;
+    background-color: transparent;
+    border: 2px solid #6fb62f;
+    color: #6fb62f;
+}
+
+.phone-number {
+    display: inherit;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-left: 30px;
+}
+
+.phone-number .fas {
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    color: #6fb62f;
+    font-size: 16px;
+}
+
+.phone-number p {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Путь страницы и название текущей стриницы */
+.page-path-page-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.page-path {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+}
+
+.page-path a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.page-path a::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: 10px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #6fb62f;
+}
+
+.page-title h1 {
+    padding-top: 10px;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+/* Кнопка открытия адаптивного меню */
+
+#hamburger_id {
+    display: none;
+    z-index: 2;
+    box-shadow: 0 0 40px 0.1px #bdbdbd;
+}
+
+.hamburger {
+    padding: 20px 15px 16px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-property: opacity, -webkit-filter;
+    transition-property: opacity, -webkit-filter;
+    -o-transition-property: opacity, filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    -webkit-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+.hamburger-slider .hamburger-inner::after {
+    top: 20px;
+}
+
+.hamburger-slider .hamburger-inner::before {
+    top: 10px;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+}
+
+.hamburger-slider .hamburger-inner {
+    top: 2px;
+}
+
+.hamburger-slider.is-active .hamburger-inner {
+    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+            transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.hamburger-slider.is-active .hamburger-inner::after {
+    -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+            transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+.hamburger-slider.is-active .hamburger-inner::before {
+    -webkit-transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+            transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0;
+}
+
+/* Наши проекты и продукты */
+.our-project,
+.our-product {
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+
+.our-project-list,
+.our-product-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* Карточки проектов */
+.our-project-item,
+.our-product-item {
+    position: relative;
+    width: 450px;
+    height: 260px;
+    margin-bottom: 30px;
+    background-color: #e1e1e1;
+}
+
+
+/* Широкий проект = № проекта + 1 */
+.our-project-item:nth-child(2),
+.our-project-item:nth-child(6),
+.our-product-item:nth-child(2),
+.our-product-item:nth-child(6) {
+    width: 930px;
+}
+
+.project-img,
+.product-img {
+    position: relative;
+    height: 100%;
+}
+
+.project-img img,
+.product-img img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.project-img img:last-child,
+.product-img img:last-child {
+    height: 60%;
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+}
+
+.project-name {
+    position: absolute;
+    left: 55px;
+    bottom: 70px;
+}
+
+.project-name h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Характеристики проекта */
+
+.floors-space-material {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 35px;
+    left: 55px;
+}
+
+.floors-space-material img {
+    height: 100%;
+    padding-right: 10px;
+}
+
+.floors-space-material p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.floors,
+.space,
+.material,
+.construction-time {
+    display: inherit;
+    height: 100%;
+    padding-right: 25px;
+}
+
+/* Задать вопрос по строительству или узнать цену */
+.ask-a-question {
+    margin-top: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(../img/ask-a-question.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.ask-a-question .section-title {
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.ask-a-question .section-title h3,
+.contacts .section-title h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ask-a-question form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.input-field {
+    width: 935px;
+    padding-right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+}
+
+.input-field input,
+.banner form input {
+    width: 245px;
+    padding: 15px 25px ;
+}
+
+.input-field textarea {
+    width: 100%;
+    height: 90px;
+    padding: 15px 25px ;
+    margin-top: 20px;
+}
+
+.input-field input,
+.input-field textarea,
+.banner form input {
+    color: #999999;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    border: none;
+}
+
+form input[type="checkbox"] {
+    display: none;
+}
+
+form .checkbox-btn-submit label,
+form .project-floor label,
+form .project-room label,
+form .project-additionally label,
+.banner form .accept-label {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    font-size: 12px;
+    color: #fff;
+}
+
+form .checkbox-btn-submit label:before,
+form .project-floor label:before,
+form .project-room label:before,
+form .project-additionally label:before,
+.banner form .accept-label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 4px solid #fff;
+    position: absolute;
+    left: 0;
+    bottom: -40%;
+    background-color: #6fb62f;
+    cursor: pointer;
+}
+
+form input[type=checkbox]:checked + label:before,
+.banner form input[type=checkbox]:checked + .accept-label:before {
+    content: "\2713";
+    font-size: 16px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 16px;
+}
+
+form .placeholder {
+    position: relative;
+    width: 32%;
+}
+
+form .placeholder input,
+form .placeholder textarea {
+    width: calc(100% - 50px);
+    -webkit-appearance: none;
+    font-family: inherit;
+    transition: all .15s ease;
+    color: #000;
+    font-size: 13px;
+}
+
+form .placeholder .label {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 13px;
+    color: #999999;
+    transform-origin: 0 0;
+    transition: all .2s ease;
+    cursor: text;
+}
+
+form .placeholder input:not(:placeholder-shown) + span,
+form .placeholder textarea:not(:placeholder-shown) + span {
+    transform: translateY(-5px) scale(.65);
+}
+form .placeholder input:not(:placeholder-shown),
+form .placeholder textarea:not(:placeholder-shown),
+form .placeholder input:focus,
+form .placeholder textarea:focus {
+    padding: 20px 25px 10px;
+}
+
+form .placeholder input:focus + span,
+form .placeholder textarea:focus + span {
+    transform: translateY(-5px) scale(.65);
+}
+
+form .placeholder:last-child {
+    width: 100%;
+}
+
+form .placeholder:last-child .label {
+    top: 35px;
+}
+
+form button {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding: 15px 35px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #6fb62f;
+}
+
+/* Контактная информация */
+.contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contacts .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.contacts .section-title {
+    padding-bottom: 0px;
+    padding-right: 140px;
+    width: auto;
+}
+
+.contacts-phone-number p,
+.contacts-mail p,
+.contacts-address p {
+    color: #8a8a8a;
+    font-size: 12px;
+}
+
+.contacts-phone-number .phone-number,
+.contacts-mail .mail,
+.contacts-address .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-right: 70px;
+}
+
+.contacts-phone-number .phone-number .fas,
+.contacts-mail .mail .fas,
+.contacts-address .address .fas {
+    color: #6fb62f;
+    font-size: 24px;
+}
+
+.contacts-phone-number .phone-number p,
+.contacts-mail .mail p,
+.contacts-address .address p {
+    padding-left: 20px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Карта */
+section #map {
+    width: 100%;
+    height: 470px;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #ececec;
+}
+
+.logo-nav-callback-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.copyright-privacy-policy-developers {
+    padding-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    font-size: 12px;
+}
+
+.privacy-policy a {
+    color: #5da81a;
+    text-decoration: none;
+    border-bottom: 1px solid #5da81a;
+}
+
+.developers {
+    display: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.developers p {
+    padding-right: 10px;
+}
+
+/* Баннер */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 1370px;
+    margin: 425px auto;
+    background: #fff;
+    position: relative;
+    transition: all 5s ease-in-out;
+    overflow: auto;
+}
+
+.banner-data {
+    position: relative;
+    width: 815px;
+    padding: 40px 60px 45px 95px;
+}
+
+.banner-title {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.banner-desc {
+    font-size: 20px;
+    padding-left: 400px;
+    padding-top: 25px;
+}
+
+.banner-advantages {
+    padding-left: 400px;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.banner-advantages li {
+    font-size: 18px;
+}
+
+.banner-advantages li::before {
+    content: '•';
+    padding-right: 6px;
+    font-size: 30px;
+    line-height: 28px;
+    color: #6fb62f;
+}
+
+.banner-price {
+    padding-top: 15px;
+    padding-left: 410px;
+}
+
+.banner-price p:first-child {
+    font-size: 23px;
+    text-decoration-line: line-through;
+    color: #a6a6a6;
+}
+
+.banner-price p:first-child span {
+    font-size: 17px;
+}
+
+.banner-price p:last-child {
+    font-size: 28px;
+    color: #6fb62f;
+    font-weight: 700;
+}
+
+.banner-price p:last-child span {
+    font-size: 21px;
+}
+
+.banner-data img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.banner form {
+    width: 220px;
+    background-color: #6fb62f;
+    padding: 50px 90px 60px;
+}
+
+.banner form p {
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.banner form .placeholder {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.banner form .placeholder input {
+    width: calc(100% - 50px);
+}
+
+.banner form .accept-label {
+    padding-top: 15px;
+}
+
+.banner form .accept-label:before {
+    bottom: unset;
+}
+
+.banner form button {
+    width: 100%;
+}

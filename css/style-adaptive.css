@@ -1,0 +1,524 @@
+/* Адаптивность по высоте */
+
+/* 900px - 1100px */
+@media screen and (max-height: 1100px) {
+    .banner {
+        margin: 225px auto;
+    }
+}
+
+/* 700px - 900px */
+@media screen and (max-height: 900px) {
+    .banner {
+        margin: 125px auto;
+    }
+}
+
+/* 600px - 700px */
+@media screen and (max-height: 700px) {
+    .banner {
+        margin: 50px auto;
+    }
+}
+
+/* Адаптивность */
+
+/* 1460px - 1760px */
+@media screen and (max-width: 1760px) {
+    .header-container {
+        width: 98%;
+    }
+}
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .container {
+        width: 1170px;
+    }
+    .header-container {
+        width: 100%;
+        align-items: center;
+    }
+    .header-desc {
+        padding-left: 30px;
+    }
+    .address-mail-social {
+        padding-right: 30px;
+    }
+    /* Адаптивное меню */
+    .header-container .logo {
+        padding: 40px 0 40px 30px;
+        display: block;
+    }
+    .header-container .menu-toggle {
+        display: none;
+        width: 530px;
+        padding: 0 60px;
+    }
+    .header-container .show {
+        display: block;
+    }
+    #hamburger_id {
+        display: block;
+        position: absolute;
+        left: 235px;
+        top: 75px;
+        outline: none;
+    }
+    #hamburger_id.is-active {
+        background-color: #6fb62f;
+    }
+    .show {
+        top: 140px  !important;
+        left: 235px;
+    }
+    .logo-menu-toggle {
+        display: none;
+    }
+    .menu-toggle {
+        position: absolute;
+        background-color: #fff;
+        -ms-flex-flow: column-reverse;
+        -o-flex-flow: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+                flex-flow: column-reverse;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+        box-shadow: 0 0 10px 0.1px #e6e6e6;
+    }
+    .callback-btn-phone-number {
+        display: none;
+    }
+    .callback-btn-phone-number .callback-btn {
+        width: 100%;
+        text-align: center;
+    }
+    .callback-btn-phone-number .phone-number {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .callback-btn-phone-number-menu-toggle {
+        display: block;
+        padding-right: 35px;
+    }
+    .callback-btn-phone-number-menu-toggle .phone-number {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    .header-container nav {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .header-container nav ul {
+        flex-wrap: wrap;
+    }
+    .header-container nav ul li {
+        padding-top: 30px;
+    }
+    .callback-btn a {
+        white-space: nowrap;
+    }
+    .input-field {
+        width: 800px;
+    }
+    .input-field input {
+        width: 26%;
+    }
+    .contacts .container {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .contacts .section-title {
+        padding-right: 0;
+    }
+    .contacts-phone-number .phone-number, .contacts-mail .mail, .contacts-address .address {
+        padding-right: 0;
+    }
+    /* Список проектов и продуктов */
+    .our-project-list .section-title-all-project {
+        width: 32%;
+    }
+    .our-project-list .our-project-item,
+    .our-product-list .our-product-item {
+        width: 32%;
+        height: 218px;
+        margin-bottom: 25px;
+    }
+    .our-project-list .our-project-item:nth-child(2),
+    .our-project-list .our-project-item:nth-child(6),
+    .our-product-list .our-product-item:nth-child(2),
+    .our-product-list .our-product-item:nth-child(6) {
+        width: 66%;
+    }
+    .our-project-list .our-project-item .project-img img,
+    .our-product-list .our-product-item .product-img img {
+        height: 100%;
+    }
+    .project-name,
+    .floors-space-material {
+        left: 25px;
+    }
+    .floors, .space, .material, .construction-time {
+        padding-right: 15px;
+    }
+    /* Баннер */
+    .banner {
+        width: 1170px;
+    }
+    .banner-data {
+        padding: 40px 40px 45px 75px;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .header-desc-address-mail-social p {
+        font-size: 12px;
+    }
+    .address-mail-social .fas, .address-mail-social .social .fab {
+        padding-right: 5px;
+    }
+    .address-mail-social .social a {
+        margin-right: 5px;
+    }
+    .address-mail-social .address {
+        padding-right: 20px;
+    }
+    .address-mail-social .mail {
+        padding-right: 20px;
+    }
+    .page-title h1 {
+        font-size: 50px;
+    }
+    /* Список проектов */
+    .our-project-list .section-title-all-project .all-project-btn a {
+        font-size: 16px;
+    }
+    .our-project-list .our-project-item,
+    .our-product-list .our-product-item {
+        height: 178px;
+    }
+    .floors-space-material {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        bottom: 20px;
+    }
+    .floors, .space, .material, .construction-time {
+        padding-top: 10px;
+    }
+    .our-project-list .our-project-item:nth-child(2) .floors-space-material,
+    .our-project-list .our-project-item:nth-child(6) .floors-space-material {
+        bottom: 35px;
+    }
+    /* Задать вопрос */
+    .ask-a-question form {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .input-field {
+        width: 100%;
+        padding-right: 0;
+    }
+    .checkbox-btn-submit {
+        padding-top: 30px;
+    }
+    .contacts-phone-number .phone-number p, .contacts-mail .mail p, .contacts-address .address p {
+        font-size: 16px;
+    }
+    .logo-nav-callback-btn {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }.logo-nav-callback-btn nav {
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    /* Баннер */
+    .banner {
+        width: 960px;
+    }
+    .banner-data {
+        width: 515px;
+        padding-left: 55px;
+    }
+    .banner-title {
+        font-size: 46px;
+    }
+    .banner-desc,
+    .banner-advantages,
+    .banner-price {
+        padding-left: 0;
+    }
+    .banner-data img {
+        display: none;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .header-container .logo {
+        padding: 20px 30px 0;
+    }
+    .header-desc-address-mail-social {
+        display: none;
+    }
+    .header-container .menu-toggle {
+        top: -1000px;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .header-container nav {
+        padding-bottom: 20px;
+    }
+    .header-container nav ul li {
+        padding-top: 0;
+    }
+    .show {
+        top: 0 !important;
+        left: 0;
+    }
+    .callback-btn-phone-number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .callback-btn-phone-number-menu-toggle {
+        display: none;
+    }
+    #hamburger_id {
+        top: 15px;
+        left: unset;
+        right: 30px;
+    }
+    header .advantages h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .contacts .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .contacts .section-title {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .contacts .section-title h3 br {
+        display: none;
+    }
+    .header-container nav ul,
+    .logo-nav-callback-btn nav ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .header-container nav ul li,
+    .logo-nav-callback-btn nav ul li {
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+    .header-container nav ul li:last-child,
+    .logo-nav-callback-btn nav ul li:last-child {
+        padding-right: 25px;
+    }
+    .page-title h1 {
+        font-size: 40px;
+    }
+    /* Список проектов */
+    .our-project .our-project-list .section-title-all-project {
+        width: 100%;
+    }
+    .our-project .our-project-list .our-project-item:nth-child(2),
+    .our-project .our-project-list .our-project-item:nth-child(6),
+    .portfolio .our-project-list .our-project-item:nth-child(2),
+    .portfolio .our-project-list .our-project-item:nth-child(6) {
+        width: 100%;
+        display: inherit;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+    .our-project .our-project-list .our-project-item,
+    .our-product .our-product-list .our-product-item,
+    .portfolio .our-project-list .our-project-item {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    /* Баннер */
+    .banner {
+        width: 720px;
+    }
+    .banner-data {
+        width: 315px;
+        padding-left: 40px;
+    }
+    .banner-title {
+        font-size: 32px;
+    }
+    .banner-desc {
+        font-size: 18px;
+    }
+    .banner form {
+        padding: 50px 50px 20px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .page-title h1 {
+        font-size: 29px;
+    }
+    /* Список проектов */
+    .our-project .our-project-list .our-project-item,
+    .our-product .our-product-list .our-product-item,
+    .portfolio .our-project-list .our-project-item  {
+        width: 100%;
+    }
+    .ask-a-question {
+        margin-top: 60px;
+    }
+    .input-field input:first-child {
+        margin-top: 0;
+    }
+    .contacts .contacts-address {
+        padding-top: 30px;
+    }
+    .copyright-privacy-policy-developers {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .privacy-policy {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    form .placeholder {
+        width: 100%;
+        margin-top: 20px;
+    }
+    form .placeholder:first-child,
+    form .placeholder:last-child {
+        margin-top: 0;
+    }
+    /* Баннер */
+    .banner {
+        width: 540px;
+    }
+    .banner-data {
+        padding: 20px 20px 25px 25px;
+    }
+    .banner form {
+        padding: 70px 40px 60px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header-container nav ul li,
+    .logo-nav-callback-btn nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .header-container .menu-toggle {
+        flex-direction: column;
+    }
+    .header-container nav {
+        padding-top: 40px;
+    }
+    .callback-btn-phone-number {
+        padding-top: 20px;
+    }
+    /* Баннер */
+    .banner {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner-data,
+    .banner form {
+        width: 100%;
+    }
+    .banner-title {
+        font-size: 28px;
+    }
+    .banner-desc {
+        font-size: 16px;
+    }
+    .banner-advantages li {
+        font-size: 16px;
+    }
+    .banner form {
+        padding: 30px 60px 20px;
+    }
+}
+
+/* 320px - 444px */
+@media screen and (max-width: 444px) {
+    .contacts-mail {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+/* 320px - 401px */
+@media screen and (max-width: 400px) {
+    .our-project-list .our-project-item:nth-child(2) .floors-space-material,
+    .our-project-list .our-project-item:nth-child(6) .floors-space-material {
+        bottom: 20px;
+    }
+}
+
+/* 320px - 396px */
+@media screen and (max-width: 396px) {
+    .menu-toggle {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    form label {
+        font-size: 10px;
+    }
+}

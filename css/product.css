@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Museo Sans 300 Light';
+    src: url(../fonts/MuseoSansCyrl-300.eot);
+    src: url(../fonts/MuseoSansCyrl-300.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/MuseoSansCyrl-300.woff) format('woff'),
+    url(../fonts/MuseoSansCyrl-300.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-path-page-title {
+    background: url(../img/product-bg.jpg) no-repeat center;
+}
+
+.page-title h1 {
+    text-transform: uppercase;
+}
+
+.product {
+    padding-top: 100px;
+}
+
+.product .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Слайдер продукта */
+
+.product-slider,
+.product-data-count {
+    width: 49%;
+}
+
+.product-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-for {
+    width: 472px;
+    height: 364px;
+}
+
+.slider-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+}
+
+.slider-nav img {
+    width: 100% !important;
+    height: 113px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.slider-nav .slick-track {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.slider-nav .slick-current {
+    width: 206px !important;
+    height: 109px;
+    opacity: 1;
+    border: 2px solid #6fb62f;
+}
+
+/* Данные продукта */
+
+.product-title-data-count {
+    width: 49%;
+}
+
+.product-title {
+    background-color: #6fb62f;
+    height: 85px;
+}
+
+.product-title h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 85px;
+}
+
+.product-data-count {
+    width: calc(100% - 150px);
+    padding: 60px 95px 75px 55px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 15px 40px 1px #ebebeb;
+}
+
+.product-data p {
+    padding-bottom: 20px;
+    color: #a4a4a4;
+    font-size: 16px;
+}
+
+.product-data p:last-child {
+    padding-bottom: 0;
+}
+
+.product-data p span {
+    color: #000;
+}
+
+/* Стоимость, количество, кнопка купить */
+.product-count {
+    margin-top: -10px;
+}
+
+.product-price {
+    padding-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.product-amount {
+    display: flex;
+    justify-content: center;
+}
+
+.amount-plus,
+.amount-minus {
+    font-size: 20px;
+    border: none;
+    background-color: #fff;
+}
+
+.amount {
+    font-size: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-buy button {
+    margin-top: 20px;
+    padding: 12px 36px;
+    background-color: #6fb62f;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    box-shadow: 0px 2px 20px 0.1px #6fb62f;
+    cursor: pointer;
+}
+
+.btn-buy button:hover {
+    background-color: #7bd02e;
+}
+
+/*  */
+.product-desc {
+    width: 725px;
+    padding-top: 55px;
+}
+
+.product-desc h2,
+.product-characteristics h2 {
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+hr {
+    width: 90px;
+    height: 3px;
+    margin-bottom: 10px;
+    background-color: #6fb62f;
+    border: none;
+}
+
+.product-desc p,
+.product-characteristics p {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*  */
+.product-characteristics {
+    width: 640px;
+    padding-top: 55px;
+}
+
+.product-characteristics p {
+    padding-top: 10px;
+    font-family: 'Museo Sans 300 Light';
+}
+
+.product-characteristics p span {
+    font-weight: 700;
+}
+
+/* Адаптивность */
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .product-slider {
+        width: 59%;
+    }
+    .product-title-data-count {
+        width: 39%;
+    }
+    .product-data-count {
+        width: calc(100% - 50px);
+        padding: 50px 25px;
+    }
+    .product-desc {
+        width: 54%;
+    }
+    .product-characteristics {
+        width: 42%;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .product-slider {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .product-title-data-count {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .product-data-count {
+        width: calc(100% - 120px);
+        padding: 50px 60px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .product-slider,
+    .product-desc,
+    .product-characteristics {
+        width: 100%;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .product-title h3 {
+        font-size: 16px;
+    }
+    .product-data-count {
+        width: calc(100% - 80px);
+        padding: 50px 40px;
+    }
+    .product-slider {
+        flex-wrap: wrap;
+    }
+    .slider-for {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .slider-nav {
+        width: 100%;
+    }
+    .slider-nav .slick-current {
+        width: 31% !important;
+        height: 95px;
+    }
+    .slider-nav img {
+        width: 31% !important;
+        height: 95px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .slick-slider {
+        width: 100%;
+        height: auto;
+    }
+    .slider-nav .slick-track {
+        justify-content: center;
+    }
+    .slider-nav img {
+        width: 280px !important;
+        height: auto;
+    }
+    .slider-nav .slick-current {
+        width: 276px !important;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .product-title {
+        display: flex;
+        align-items: center;
+    }
+    .product-title h3 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .product-data-count {
+        width: calc(100% - 40px);
+        padding: 30px 20px;
+        flex-wrap: wrap;
+    }
+    .product-count {
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}

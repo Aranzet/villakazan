@@ -1,0 +1,262 @@
+.page-path-page-title {
+    background: url(../img/project-catalog-bg.jpg) no-repeat center;
+}
+
+/* Фильтр проектов */
+.filter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 55px;
+    padding: 40px 50px 45px;
+    position: relative;
+    border: 8px solid #6fb62f;
+}
+
+.form-name {
+    position: absolute;
+    top: -19px;
+    margin-left: 40px;
+    padding: 0 15px;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.filter-form h4 {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project-area-size,
+.project-floor-number,
+.project-room-number,
+.project-additionally-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+form .project-floor label:before,
+form .project-room label:before,
+form .project-additionally label:before {
+    background-color: unset;
+}
+
+.project-area-size p {
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.project-area-size input {
+    width: 62px;
+    margin-right: 8px;
+    padding: 8px 0;
+    border: 1px solid #cccccc;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.project-area-size input[type=number]::-webkit-inner-spin-button,
+.project-area-size input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.filter-form .project-floor label:before,
+.filter-form .project-room label:before,
+.filter-form .project-additionally label:before {
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cccccc !important;
+    background-color: #fff;
+}
+
+.filter-form input[type=checkbox]:checked + label:before {
+    content: "";
+    padding: 3px;
+    width: 14px;
+    height: 14px;
+    background-clip: content-box;
+    background-color: #6fb62f;
+}
+
+.project-floor-number,
+.project-room-number,
+.project-additionally-option {
+    height: 32px;
+}
+
+.project-floor-number label,
+.project-room-number label,
+.project-additionally-option label {
+    padding-right: 20px;
+    color: #000 !important;
+    font-size: 15px !important;
+}
+
+.project-floor-number label:last-child,
+.project-room-number label:last-child,
+.project-additionally-option label:last-child {
+    padding-right: 0;
+}
+
+/* Стоимость проекта и кнопка "Подробнее" */
+.our-project {
+    padding-bottom: 0;
+}
+
+.project-price-btn-more {
+    position: absolute;
+    right: 35px;
+    bottom: 25px;
+}
+
+.project-price p {
+    padding-bottom: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.project-price p span {
+    font-size: 16px;
+}
+
+.project-price-btn-more button {
+    cursor: pointer;
+    padding: 12px 36px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-color: #6fb62f;
+    -webkit-box-shadow: 0px 10px 40px 0.1px #6fb62f;
+    box-shadow: 0px 5px 20px 0.1px #6fb62f;
+}
+
+.project-price-btn-more button:hover {
+    background-color: #7bd02e;
+}
+
+.ask-a-question {
+    margin-top: 75px;
+}
+
+/* Адаптивность */
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .filter-form {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .project-additionally {
+        padding-top: 20px;
+    }
+    .project-price-btn-more {
+        right: 25px;
+    }
+    .project-price p {
+        font-size: 19px;
+    }
+    .project-price-btn-more button {
+        padding: 10px 28px;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .floors-space-material {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .floors {
+        width: 100%;
+    }
+    .project-price-btn-more {
+        bottom: 20px;
+    }
+    .project-price p {
+        font-size: 14px;
+    }
+    .project-price-btn-more button {
+        padding: 8px 20px;
+    }
+    .our-project-list .our-project-item:nth-child(2) .floors,
+    .our-project-list .our-project-item:nth-child(6) .floors{
+        width: auto;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .project-room {
+        padding-top: 20px;
+    }
+    .project-additionally-option {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .project-additionally-option label {
+        margin-bottom: 15px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .form-name {
+        margin-left: 0;
+        font-size: 22px;
+    }
+    .project-area,
+    .project-floor,
+    .project-room {
+        width: 100%;
+    }
+    .project-floor {
+        padding-top: 20px;
+    }
+    .project-additionally-option {
+        height: auto;
+    }
+}
+
+/* 320px - 396px */
+@media screen and (max-width: 396px) {
+    .filter-form {
+        padding: 30px 40px 35px;
+    }
+    .form-name {
+        font-size: 19px;
+        top: -15px;
+    }
+    .project-name h3 {
+        font-size: 22px;
+    }
+    .project-price p {
+        font-size: 12px;
+    }
+    .project-price p span {
+        font-size: 10px;
+    }
+    .project-price-btn-more button {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+}

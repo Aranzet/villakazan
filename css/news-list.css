@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Museo Sans 300 Light';
+    src: url(../fonts/MuseoSansCyrl-300.eot);
+    src: url(../fonts/MuseoSansCyrl-300.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/MuseoSansCyrl-300.woff) format('woff'),
+    url(../fonts/MuseoSansCyrl-300.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-path-page-title {
+    background: url(../img/news-bg.jpg);
+}
+
+.news-list {
+    padding-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.news-item {
+    padding-bottom: 60px;
+    display: inherit;
+    width: 48%;
+}
+
+.news-img img {
+    width: 265px;
+    height: 230px;
+}
+
+.news-data {
+    padding-left: 35px;
+}
+
+.news-date {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #9e9e9e;
+}
+
+.news-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+
+.news-desc {
+    padding-bottom: 25px;
+    line-height: 22px;
+}
+
+.news-btn-more {
+    background-color: #6fb62f;
+    text-decoration: none;
+    padding: 12px 35px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: 0px 10px 40px 0.1px #6fb62f;
+}
+
+.news-btn-more:hover {
+    background-color: #7bd02e;
+}
+
+/* Номер страницы */
+.page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .prev-page,
+.page .next-page {
+    width: 32px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.page .prev-page {
+    margin-right: 17px;
+    background: url(../img/prev-page.png) no-repeat center;
+}
+
+.page .next-page {
+    margin-left: 17px;
+    background: url(../img/next-page.png) no-repeat center;
+}
+
+.page .prev-page.no-page {
+    background: url(../img/prev-page-no-active.png) no-repeat center;
+    cursor: auto;
+}
+
+.page .next-page.no-page {
+    background: url(../img/next-page-no-active.png) no-repeat center;
+    cursor: auto;
+}
+
+.number-page {
+    margin-left: 13px;
+    margin-right: 13px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Museo Sans 300 Light';
+    font-size: 30px;
+}
+
+.active-page {
+    color: #6fb62f;
+}
+
+/* Адаптивность */
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .news-img img {
+        width: 200px;
+        height: auto;
+    }
+    .news-title {
+        font-size: 20px;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .news-img img {
+        width: 150px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .news-item {
+        width: 100%;
+    }
+    .news-img img {
+        width: 250px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .news-img img {
+        width: 200px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .news-item {
+        flex-wrap: wrap;
+    }
+    .news-data {
+        padding-left: 0px;
+    }
+    .news-title {
+        font-size: 18px;
+    }
+    .page .prev-page,
+    .page .next-page {
+        margin-right: 10px;
+    }
+    .number-page {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,418 @@
+.page-path-page-title {
+    background: url(../img/project-bg.jpg) no-repeat center;
+}
+
+.project-slider-data {
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+.project-slider-data .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Слайдер проекта */
+
+.project-slider {
+    width: 940px;
+}
+
+.project-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-for {
+    width: 720px;
+    height: 404px;
+}
+
+.slider-for img {
+    width: auto;
+    height: 100%;
+}
+
+.slider-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.slider-nav .slick-list {
+    padding: 0 !important;
+    margin: 30px 0 !important;
+    height: 345px !important;
+}
+
+.slider-nav img {
+    width: 100% !important;
+    height: 113px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    border: none !important;
+}
+
+.slider-nav .slick-track {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.slider-nav .slick-current {
+    opacity: 1;
+    border: 2px solid #6fb62f;
+}
+
+.slider-nav .slick-prev {
+    left: calc(50% - 10px);
+    top: 10px;
+    width: 31px;
+    height: 16px;
+    background: url(../img/slider-arrow-up.png) no-repeat center;
+    z-index: 10;
+}
+
+.slider-nav .slick-prev:hover,
+.slider-nav .slick-prev:focus {
+    background: url(../img/slider-arrow-up-focus.png) no-repeat center;
+}
+
+.slider-nav .slick-prev:before {
+    content: none;
+}
+
+.slider-nav .slick-next {
+    left: calc(50% - 10px);
+    top: unset;
+    bottom: -5px;
+    width: 31px;
+    height: 16px;
+    background: url(../img/slider-arrow-down.png) no-repeat center;
+    z-index: 10;
+}
+
+.slider-nav .slick-next:hover,
+.slider-nav .slick-next:focus {
+    background: url(../img/slider-arrow-down-focus.png) no-repeat center;
+}
+
+.slider-nav .slick-next:before {
+    content: none;
+}
+
+/* Данные проекта */
+.project-data-price-btn-consultation {
+    position: relative;
+    width: 240px;
+    padding: 30px 45px;
+    border: 8px solid #6fb62f;
+}
+
+.project-name {
+    padding: 0 15px;
+    left: unset;
+    top: -18px;
+    bottom: unset;
+    background-color: #fff;
+}
+
+.project-floor,
+.project-floor-area,
+.project-area,
+.project-material,
+.project-time,
+.project-bedroom {
+    display: flex;
+    padding-bottom: 7px;
+}
+
+.project-data p {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+/* Особенности проекта */
+
+.project-singularity {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.project-singularity h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.project-singularity ul {
+    display: flex;
+    padding-top: 6px;
+}
+
+.project-singularity ul li {
+    list-style: none;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.project-singularity ul li::before {
+    display: inline-block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #6fb62f;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+/* Стоимотсь проекта */
+.project-price {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.project-price p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.project-price p span {
+    font-size: 23px;
+}
+
+.btn-consultation button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #6fb62f;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-consultation button:hover {
+    background-color: #7bd02e;
+}
+
+/* Планировка площади */
+
+.project-plan h3,
+.project-desc h3,
+.project-advantages h3 {
+    font-size: 24px;
+}
+
+.floor-plan-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.floor-plan-item p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.floor-img {
+    width: 420px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 50px 1px #cccccc;
+}
+
+.floor-img img {
+    width: auto;
+    height: 100%;
+}
+
+/* Описание проекта */
+
+.project-desc {
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.project-desc p {
+    padding-top: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+/* Преимущества проекта */
+
+.project-advantages-list,
+.project-advantages-item {
+    display: flex;
+}
+
+.project-advantages-list {
+    padding-top: 20px;
+}
+
+.project-advantages-item {
+    padding-right: 35px;
+}
+
+.project-advantages-item p {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ask-a-question {
+    margin-top: 60px;
+}
+
+/* Адаптивность */
+
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    .project-slider {
+        width: 800px;
+    }
+    .project-slider .slick-slider {
+        display: flex;
+        align-items: center;
+    }
+    .slider-for {
+        width: 580px;
+    }
+    .floor-img {
+        width: 370px;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .project-slider-data .container {
+        flex-wrap: wrap;
+    }
+    .project-slider {
+        width: 100%;
+    }
+    .slider-for {
+        width: 77%;
+    }
+    .project-data-price-btn-consultation {
+        margin-top: 50px;
+    }
+    .floor-plan-list {
+        flex-wrap: wrap;
+    }
+    .floor-img {
+        width: 440px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .slider-for {
+        width: 70%;
+    }
+    .project-advantages-list {
+        flex-wrap: wrap;
+    }
+    .project-advantages-item {
+        padding-top: 20px;
+    }
+    .project-advantages-item:first-child {
+        padding-top: 0;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .project-slider {
+        flex-wrap: wrap;
+    }
+    .slider-for {
+        width: 100%;
+        height: auto;
+    }
+    .slider-nav .slick-list {
+        height: auto !important;
+    }
+    .slider-nav .slick-track {
+        flex-wrap: nowrap;
+    }
+    .slider-nav {
+        width: 100%;
+    }
+    .slider-nav img {
+        width: 175px !important;
+        height: 100px !important;
+        margin-right: 10px;
+    }
+    .slick-track:before, .slick-track:after {
+        content: none !important;
+    }
+    .slider-nav .slick-prev {
+        left: -30px;
+        top: calc(50% - 10px);
+        transform: rotate(-90deg);
+    }
+    .slider-nav .slick-next {
+        left: unset;
+        right: -30px;
+        bottom: calc(50% - 10px);
+        transform: rotate(-90deg);
+    }
+    .project-advantages-item img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .project-slider .slick-slider {
+        justify-content: center;
+    }
+    .slider-nav .slick-list {
+        width: 90%;
+    }
+    .slider-nav .slick-prev {
+        left: -20px;
+    }
+    .slider-nav .slick-next {
+        right: -20px;
+    }
+    .project-data-price-btn-consultation {
+        padding: 30px 25px;
+    }
+    .project-material {
+        align-items: center;
+    }
+    .project-material img {
+        width: 16px;
+        height: 17px;
+    }
+    .project-price p {
+        font-size: 32px;
+    }
+    .floor-plan-item,
+    .floor-img {
+        width: 100%;
+    }
+    .floor-img {
+        align-items: center;
+    }
+    .floor-img img {
+        width: 100%;
+        height: auto;
+    }
+}
