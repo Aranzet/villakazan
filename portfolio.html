@@ -11,10 +11,6 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
-        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/ -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d34998bf-4eeb-43be-9ec7-113edc5f6722" type="text/javascript"></script>
-    <script src="js/placemark.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -465,7 +461,11 @@
             </div>
         </div>
     </footer>
+    <!-- Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/ -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d34998bf-4eeb-43be-9ec7-113edc5f6722" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/placemark.js" type="text/javascript"></script>
     <script>
         $(function(){
             $('#hamburger_id').click(function() {
