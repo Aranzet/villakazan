@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style-adaptive.css">
     <link rel="stylesheet" href="css/mediamaterials.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
@@ -43,7 +42,7 @@
         </div>
         <div class="header-container">
             <div class="logo">
-                <img src="img/logo.png" alt="VILLA KAZAN">
+                <a href="index.html"><img src="img/logo.png" alt="VILLA KAZAN"></a>
             </div>
             <div class="menu-toggle">
                 <div class="logo-menu-toggle">
@@ -52,11 +51,11 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Проекты домов</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a class="active-menu">Новости и статьи</a></li>
+                        <li><a  class="active-menu">О компании</a></li>
+                        <li><a href="project-catalog.html">Проекты домов</a></li>
+                        <li><a href="service.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="news-list.html">Новости и статьи</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
@@ -323,16 +322,16 @@
         <div class="container">
             <div class="logo-nav-callback-btn">
                 <div class="logo">
-                    <img src="img/logo.png" alt="VILLA KAZAN">
+                    <a href="index.html"><img src="img/logo.png" alt="VILLA KAZAN"></a>
                 </div>
                 <nav>
                     <ul>
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Проекты домов</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a class="active-menu">Новости и статьи</a></li>
+                        <li><a class="active-menu">О компании</a></li>
+                        <li><a href="project-catalog.html">Проекты домов</a></li>
+                        <li><a href="service.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="news-list.html">Новости и статьи</a></li>
                     </ul>
                 </nav>
                 <div class="callback-btn">
@@ -360,7 +359,43 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d34998bf-4eeb-43be-9ec7-113edc5f6722" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/placemark.js" type="text/javascript"></script>
-    <script src="js/videomaterials.js"></script>
+    <script>
+        var videoPlayButton,
+        videoWrapper = document.getElementsByClassName('videomaterials-item')[0],
+        video = document.getElementsByTagName('video')[0],
+        videoMethods = {
+            renderVideoPlayButton: function() {
+                if (videoWrapper.contains(video)) {
+                    this.formatVideoPlayButton()
+                    video.classList.add('has-media-controls-hidden')
+                    videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+                    videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+                }
+            },
+
+            // Добавление кнопки воспроизведения, даты видео и названия
+            formatVideoPlayButton: function() {
+                videoWrapper.insertAdjacentHTML('beforeend', '\
+                    <svg class="video-overlay-play-button" alt="Play video">\
+                    </svg>\ ')
+            },
+
+            hideVideoPlayButton: function() {
+                video.play()
+                videoPlayButton.classList.add('is-hidden')
+                video.classList.remove('has-media-controls-hidden')
+                video.setAttribute('controls', 'controls')
+            }
+        }
+
+        videoMethods.renderVideoPlayButton()
+
+        $(function(){
+            $('.video-overlay-play-button').click(function() {
+            $('.videomaterials-date-name').toggleClass('is-hidden');
+            });
+        });
+    </script>
     <script>
         $(function(){
             $('#hamburger_id').click(function() {
