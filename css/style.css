@@ -422,6 +422,7 @@ body {
 .gradient {
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 .project-name {

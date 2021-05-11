@@ -277,7 +277,12 @@
     display: none;
 }
 
+.slider-item {
+    position: relative;
+}
+
 .slider-nav .slider-item {
+    position: relative;
     width: 335px !important;
     height: 200px;
     margin-bottom: 10px;
@@ -292,6 +297,7 @@
 
 .slider-for .slider-item .gradient {
     height: 60%;
+    width: 100%;
 }
 
 .slider-for {
@@ -320,6 +326,18 @@
 .slider-nav .slick-current img {
     height: 190px;
 }
+
+/*устанавливаем неактивными все слайды в слайдере кроме первого*/
+.slider .slider-item:not(:first-child),
+.slider-project .slider-item:not(:first-child) {
+    display: none;
+ }
+ 
+ /*устанавливаем все слайды в слайдере активными после инициализации slick-slider*/
+ .slider.slick-initialized .slider-item:not(:first-child),
+ .slider-project.slick-initialized .slider-item:not(:first-child) {
+    display: block;
+ }
 
 /* Адаптивность */
 
