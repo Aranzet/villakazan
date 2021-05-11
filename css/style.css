@@ -208,7 +208,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 5px;
 }
 
@@ -245,7 +246,8 @@ body {
 #hamburger_id {
     display: none;
     z-index: 2;
-    box-shadow: 0 0 40px 0.1px #bdbdbd;
+    -webkit-box-shadow: 0 0 40px 0.1px #bdbdbd;
+            box-shadow: 0 0 40px 0.1px #bdbdbd;
 }
 
 .hamburger {
@@ -584,6 +586,8 @@ form .placeholder textarea {
     width: calc(100% - 50px);
     -webkit-appearance: none;
     font-family: inherit;
+    -webkit-transition: all .15s ease;
+    -o-transition: all .15s ease;
     transition: all .15s ease;
     color: #000;
     font-size: 13px;
@@ -595,14 +599,20 @@ form .placeholder .label {
     left: 25px;
     font-size: 13px;
     color: #999999;
-    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
     cursor: text;
 }
 
 form .placeholder input:not(:placeholder-shown) + span,
 form .placeholder textarea:not(:placeholder-shown) + span {
-    transform: translateY(-5px) scale(.65);
+    -webkit-transform: translateY(-5px) scale(.65);
+        -ms-transform: translateY(-5px) scale(.65);
+            transform: translateY(-5px) scale(.65);
 }
 form .placeholder input:not(:placeholder-shown),
 form .placeholder textarea:not(:placeholder-shown),
@@ -613,7 +623,9 @@ form .placeholder textarea:focus {
 
 form .placeholder input:focus + span,
 form .placeholder textarea:focus + span {
-    transform: translateY(-5px) scale(.65);
+    -webkit-transform: translateY(-5px) scale(.65);
+        -ms-transform: translateY(-5px) scale(.65);
+            transform: translateY(-5px) scale(.65);
 }
 
 form .placeholder:last-child {
@@ -761,6 +773,8 @@ footer {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
@@ -773,12 +787,18 @@ footer {
 }
 
 .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 1370px;
     margin: 425px auto;
     background: #fff;
     position: relative;
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
     transition: all 5s ease-in-out;
     overflow: auto;
 }
@@ -825,7 +845,8 @@ footer {
 
 .banner-price p:first-child {
     font-size: 23px;
-    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
     color: #a6a6a6;
 }
 
